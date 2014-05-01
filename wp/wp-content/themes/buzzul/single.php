@@ -19,7 +19,7 @@
       <div class="meta">
         <time datetime="<?php the_time('Y.m.d H:i:S'); ?>"><?php the_time('Y.m.d'); ?></time>
         <div class="cat"><?php the_category(',')?></div>
-        <blockquote>引用：<?php echo post_custom('quote'); ?></blockquote>
+        <blockquote>引用：<a href="<?php echo post_custom('quote-url'); ?>" target="_blank"><?php echo post_custom('quote-text'); ?></a></blockquote>
       </div>
     </article>
     <h2>この記事を見た人に人気の動画</h2>
